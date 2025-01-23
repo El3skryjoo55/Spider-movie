@@ -1,0 +1,1216 @@
+
+
+/* .....  */
+
+	
+body {
+  font-family: 'FontBold' ,sans-serif;
+  font-weight: 400;
+  color: #fff;
+  -webkit-transition: .4s all ease;
+  -o-transition: .4s all ease;
+  transition: .4s all ease;
+  padding: 0;
+  margin: 0;
+  direction: rtl !important;
+  background-size: 100% 100%;
+  background: #181d25;
+  font-size: 14px;
+  overflow-x: hidden;
+  padding-top: 70px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  outline: 0;
+}
+input,textarea,button,select {
+  border: 0;
+  outline: 0;
+  font-family: 'FontBold' ,sans-serif;
+  outline: 0;
+}
+ul,ol,li {
+  list-style: none;
+  font-family: 'FontBold' ,sans-serif;
+  padding: 0;
+  margin: 0
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'FontBold' ,sans-serif;
+  font-weight: 400;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #00bdce;
+}
+
+:before,:after {
+  clear: both;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 97%;
+}
+.dflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header.PageHeader {
+  height: auto;
+  transition: .4s all ease;
+  background: #1f252e;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  -webkit-box-shadow: 0 0 30px #00000073;
+  box-shadow: 0 0 30px #00000073;
+}
+.PageHeader .container {
+  height: 100%;
+  display: table;
+}
+.PageHeader .MenuBtn {
+  float: right;
+  width: 50px;
+  padding: 10px ;
+  height: 50px;
+  margin: 3px 0 0;
+  cursor: pointer;
+  margin-left: 18px;
+}
+.PageHeader .MenuBtn span {
+  display: block;
+  width: 33px;
+  height: 3px;
+  background: #FFF;
+  margin-bottom: 8px;
+}
+/* .PageHeader .MenuBtn span:nth-child(2n+0) {
+  width: 15px;
+}
+.PageHeader .MenuBtn span:nth-child(3n+0) {
+  width: 26px;
+} */
+header.PageHeader .HeaderLogo {
+  float: right;
+}
+header.PageHeader .HeaderLogo > a {
+  display: block;
+  line-height: 60px;
+  font-family: Righteous;
+  text-transform: capitalize;
+  padding-right: 65px;
+}
+header.PageHeader .HeaderLogo > a > span {
+  /* float: left; */
+  font-size: 40px;
+}
+
+header.PageHeader .HeaderLogo > a p {
+  font-family: Tajawal;
+  display: block;
+  line-height: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #DDD;
+}
+.PageHeader .MenuHeader {
+  float: right;
+  margin-right: 15px;
+}
+.PageHeader .MenuHeader > ul > li {
+  float: right;
+  font-weight: bold;
+}
+.PageHeader .MenuHeader > ul > li > a {
+  display: block;
+  font-size: 16px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  line-height: 65px;
+  padding: 0px 17px;
+  border-radius: 5px;
+}
+.PageHeader .MenuHeader > ul > li > a i {
+  vertical-align: top;
+  font-size: 23px;
+  line-height: 65px;
+  padding-left: 10px;
+}
+.PageHeader .LeftHeader {
+  float: left;
+}
+.PageHeader .LeftHeader .UserArea > a {
+  float: right;
+  background: #01b789;
+  height: 42px;
+  border-radius: 5px;
+  padding: 0px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 42px;
+  color: #FFF;
+}
+.PageHeader .LeftHeader .UserArea {
+  float: left;
+  padding: 10px 0;
+}
+
+.PageHeader .MenuHeader > ul > li > ul {
+  background: #343c48;
+  list-style: none;
+  visibility: hidden;
+  width: 210px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 7px #0000005e;
+  box-shadow: 0 2px 7px #0000005e;
+  position: absolute;
+  min-width: 200px;
+  opacity: 0;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  right: 50%;
+  -webkit-transform: translate(50%,0);
+  -ms-transform: translate(50%,0);
+  transform: translate(50%,0);
+  top: 65px;
+}
+.PageHeader .MenuHeader > ul > li > ul > li>a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-bottom: 1px solid #00000026;
+  color: #ffffff;
+  -webkit-transition: .4s all ease;
+  -o-transition: .4s all ease;
+  transition: .4s all ease;
+}
+.PageHeader .MenuHeader > ul > li > ul > li:last-child>a {
+  border: 0;
+}
+.PageHeader .MenuHeader > ul > li > ul > li>a:hover {
+  background: rgb(255 255 255 / 0.1);
+  padding: 10px 30px;
+}
+.PageHeader .MenuHeader > ul > li > ul > li:nth-child(1)>a {
+  border-radius: 5px 5px 0 0;
+}
+.PageHeader .MenuHeader > ul > li > ul > li:last-child>a {
+  border-radius: 0 0 5px 5px;
+}
+.PageHeader .MenuHeader > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+.PageHeader .LeftHeader .SearchBox {
+  float: right;
+  margin: 18px 0;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 1px solid #ffffff1f;
+  margin-left: 15px;
+}
+.PageHeader .LeftHeader .SearchBox form input[type="text"] {
+  width: 300px;
+  display: block;
+  height: 45px;
+  border-radius: 35px;
+  padding: 10px 17px;
+  font-weight: bold;
+  font-size: 13px;
+  background: #181d25;
+}
+.PageHeader .LeftHeader .SearchBox form button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45px;
+  text-align: center;
+  height: 45px;
+  font-size: 23px;
+  background: #181d25;
+  color: #555;
+}
+.PageHeader .LeftHeader .SearchBtn {
+  float: right;
+  margin: 13px 0 0;
+  line-height: 45px;
+  font-size: 33px;
+  color: #DDD;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.SectionBlock .Title {
+  height: 54px;
+  border-bottom: 1px solid #222831;
+  margin-bottom: 15px;
+}
+
+.blockBtns > a {
+  height: 29px;
+  line-height: 29px;
+  width: 29px;
+  border-radius: 50%;
+  background: #111c3a;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+  font-size: 16px;
+  -webkit-box-shadow: 0 0 10px #00000054;
+  box-shadow: 0 0 10px #00000054;
+}
+.blockBtns > a.AddFevorite {
+  background: #d00b0b;
+}
+.blockBtns > a.watch-later {
+  background: #ffbe28;
+  color: #444;
+}
+.BlockOne:hover .blockBtns {
+  top: 10px;
+  opacity: 1;
+}
+.blockBtns > a:after {
+  -webkit-transition: .4s all ease;
+  -o-transition: .4s all ease;
+  transition: .4s all ease;
+  content: attr(data-title);
+  position: absolute;
+  line-height: 17px;
+  background: #2c3440;
+  color: #fff;
+  border: .5px solid #ffffff1a;
+  padding: 2px 18px;
+  top: 50%;
+  -webkit-box-shadow: 0 0 10px #00000052;
+  box-shadow: 0 0 10px #00000052;
+  font-size: 11px;
+  left: 106%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  opacity: 0;
+  border-radius: 25px;
+  white-space: nowrap;
+  visibility: hidden;
+  font-weight: bold;
+}
+.blockBtns > a:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+.PageHeader .MenuHeader > ul > li.menu-item-has-children > a:after {
+  position: relative;
+  top: 26px;
+  /* font-family: "Font Awesome 5 Pro"; */
+  /* speak: none; */
+  font-style: normal;
+  font-weight: 700;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  /* float: left; */
+  font-size: 16px;
+  left: 0;
+  display: inline-block;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .35s all ease;
+  -o-transition: .35s all ease;
+  transition: .35s all ease;
+  content: "🔽";
+  margin-right: 10px;
+}
+.PageHeader .MenuHeader > ul > li.menu-item-has-children > a:hover:after {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+
+.PageHeader .MenuHeader > ul > li:hover:after{
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1)
+}
+header.PageHeader .HeaderLogo > a img.imgLogo {
+  float: right;
+  width: 53px;
+  margin: 6px 0 0 12px;
+  transition: .4s all ease;
+  position: absolute;
+  right: 0;
+}
+header.PageHeader .HeaderLogo > a img.imgLogo.dark {
+  right: 0;
+  opacity: 0;
+}
+header.PageHeader .HeaderLogo > a >h4 {
+  float: right;
+  line-height: 65px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'FontBlack';
+}
+header.PageHeader .HeaderLogo > a >h4 > em {
+  font-style: normal;
+  color: #ff5c5c;
+}
+section.HeroSecion {
+  display: block;
+  width: 100%;
+  background: #1f252e;
+  clear: both;
+}
+section.HeroSecion .RightHero {
+  float: right;
+  width: 40%;
+  text-align: center;
+  z-index: 9;
+  background: #1f252ef2;
+}
+section.HeroSecion .RightHero .LogoHero {margin: 45px 0;}
+section.HeroSecion .RightHero .LogoHero img.imgHero {
+  width: 160px;
+}
+section.HeroSecion .RightHero .LogoHero .LogoHeroText {
+  display: table;
+  overflow: hidden;
+  -webkit-transition: .4s .2s all cubic-bezier(0.25, 0.1, 0, 1.15);
+  -o-transition: .4s .2s all cubic-bezier(0.25, 0.1, 0, 1.15);
+  transition: .4s .2s all cubic-bezier(0.25, 0.1, 0, 1.15);
+  -webkit-transform: translate(0px, 110px);
+  -ms-transform: translate(0px, 110px);
+  transform: translate(0px, 110px);
+  opacity: 0;
+}
+
+
+.PageHeader .MenuHeader > ul > li:hover:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+
+
+
+		/* ...................................  */
+
+    /* قسم التخصيص */
+.search-animation {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.animated-text {
+  font-size: 2.5rem;
+  color: #1a73e8;
+  animation: fadeInUp 2s ease-in-out infinite alternate;
+  font-weight: bold;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* تأثير الحركة */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text:hover {
+  color: #e91e63;
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.search-container {
+  display: block;
+  
+  align-items: center;
+  position: relative;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.search-container input[type="text"] {
+  width: 400px;
+  height: 39px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 0px 5px 5px 0px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -ms-border-radius: 0px 5px 5px 0px;
+  -o-border-radius: 0px 5px 5px 0px;
+}
+.search-container .fa-search {
+  position: absolute;
+  position: static;
+  font-size: 14px;
+  color: black;
+
+}
+
+ /* لجعل النص placeholder بجانب الأيقونة */
+ .search-container input::placeholder {
+  color: #aaa; /* لون placeholder */
+  font-size: 17px;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px 0px 0px 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -ms-border-radius: 5px 0px 0px 5px;
+  -o-border-radius: 5px 0px 0px 5px;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+
+.animated-text{
+  width: 330px;
+  font-size: x-large;
+  padding: 10px;
+}
+
+.img-logo{
+  width: 50px; /* حجم الصورة */
+  height: 50px; /* حجم الصورة */
+  border-radius: 50%; /* لجعل الصورة دائرية */
+  margin-right: 0px; /* مسافة بين الصورة والاسم */
+  border: 2px solid #ccc; /* إطار للصورة */
+  object-fit: cover; /* لتناسب الصورة الإطار */
+  cursor: pointer;
+}
+
+.HeaderLogo{
+      display: flex;
+      justify-content: space-between;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+}
+
+
+
+.MenuBtn span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 6px 0;
+  background-color: #333;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* بداية من اليمين مخفي */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: white;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: baseline;
+
+}
+.sidebar li{
+  margin-top: 15px;
+}
+
+
+.sidebar.active {
+  right: 0; /* تظهر عند إضافة active */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block; /* تظهر عند إضافة active */
+}
+
+
+/* تنسيق الفوتر */
+.footer {
+  background-color: #535252;
+  color: rgb(227, 216, 216);
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 1273px;
+  
+
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px; /* حجم الأيقونات */
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links a i {
+  font-size: 24px; /* حجم الأيقونات عند التمرير */
+  transition: transform 0.3s ease; /* تأثير عند المرور */
+}
+
+.social-links a:hover i {
+  transform: scale(1.2);
+   /* تكبير الأيقونة عند المرور */
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+
+/* to make in header outer.  */
+.PageHeader .MenuHeader > ul > li:after {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  height: 4px;
+  opacity: 0;
+  background: #06a6b2;
+  -webkit-transition: .4s all ease;
+  -o-transition: .4s all ease;
+  transition: .4s all ease;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .MenuBtn {
+    display: flex;
+  }
+
+  .NavigationMenu {
+    display: none;
+  }
+
+  .HeaderLogo {
+    margin-left: auto;
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
+body{
+  display: inline-table;
+  float: none;
+  font-family: 'Tajawal ', sans-serif; /* الخط العربي هنا */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* cards.  */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* للسماح بظهور الكروت على أكثر من سطر إذا كانت المساحة غير كافية */
+  gap: 20px; /* مسافة بين الكروت */
+  justify-content: center; /* لتوسيط الكروت داخل الحاوية */
+  padding: 20px;
+}
+
+.card {
+  width: 250px; /* عرض الكارد */
+  background: #1e2430; /* لون خلفية الكارد */
+  border-radius: 10px; /* حواف دائرية */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* ظل الكارد */
+  overflow: hidden; /* لمنع تجاوز الصورة حدود الكارد */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير الأنيميشن */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* رفع الكارد عند التحريك فوقه */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  width: 100%; /* الصورة تأخذ عرض الكارد بالكامل */
+  height: 150px; /* ارتفاع ثابت للصورة */
+  object-fit: cover; /* لضبط الصورة داخل الكارد بشكل مثالي */
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center; /* توسيط النص داخل الكارد */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.card-genre {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #ffcc00;
+}
+
+.rating {
+  margin-right: 5px; /* مسافة بين التقييم والنجمة */
+}
+
+.fa-star {
+  color: #ffcc00; /* لون النجمة */
+}
+
+
+.card {
+  opacity: 0; /* البداية مخفية */
+  transform: translateY(20px); /* تبدأ الكروت من أسفل */
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* رجوع الكروت لمكانها الطبيعي */
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  /*لتثبيتالزرفيمكانمحدد*/bottom: 20px;
+  /*المسافةمنأسفلالشاشة*/right: 20px;
+  /*المسافةمنيمينالشاشة*/width: 50px;
+  /*عرضالزر*/height: 50px;
+  /*ارتفاعالزر*/background-color: #3498db;
+  /*اللونالأزرقالفاتح*/color: white;
+  /*لونالنص*/border: none;
+  /*إزالةالحدود*/border-radius: 50%;
+  /*شكلدائري*/display: none;
+  /*إخفاءالزرافتراضيًا*/align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  /*حجمالسهم*/cursor: pointer;
+  /*تحويلالمؤشرعندالتحويم*/box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /*ظلالزر*/transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #2980b9; /* تغيير اللون عند التحويم */
+  transform: scale(1.1); /* تكبير الزر قليلاً عند التحويم */
+}
+
+body{
+  font-family: 'Cairo', sans-serif;
+}
+
+
+/* style of cards  */
+.card-m {
+  width: 220px; /* العرض */
+  height: 400px; /* الطول */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1e1e2a;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+}
+
+.card-m:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* تنسيق الصورة داخل الكارد */
+.card-m img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* تغطي الصورة الكارد بالكامل */
+  display: block;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* ظل تحت الصورة */
+}
+
+/* تنسيق المحتوى داخل الكارد */
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), transparent);
+  color: #fff;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+/* تنسيق اسم الفيلم والنوع */
+.card-title {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-genre {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* التقييم */
+.card-rating {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.card-rating i {
+  color: gold;
+}
+
+/* الوصف الذي سيظهر عند الهوفر */
+.card-description {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #ccc;
+  opacity: 0; /* إخفاء الوصف بشكل افتراضي */
+  transform: translateY(20px); /* تحريك الوصف لأسفل */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card-m:hover .card-description {
+  opacity: 1; /* إظهار الوصف عند الهوفر */
+  transform: translateY(0); /* إعادة تحريك الوصف لوضعه الطبيعي */
+}
+.card-m img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* تغطي الصورة الكارد بالكامل */
+  display: block;
+  box-shadow: 0 -15px 30px rgba(94, 93, 93, 0.6); /* الظل الجديد الذي يطلع فوق */
+}
+
+
+
+
+
+/* تنسيق القسم الرئيسي */
+.HeroSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: #1e1e2a;
+  color: #fff;
+}
+
+/* القسم الأيمن */
+.RightSection {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+  
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  width: 200px; /* عرض الصورة */
+  height: 200px; /* ارتفاع الصورة (يجب أن يكون مساويًا للعرض) */
+  border-radius: 50%; /* لتحويل الصورة إلى دائرة */
+  
+  /* border: 2px solid #fff; إذا أردت إضافة إطار */
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3); /* لإضافة ظل */
+}
+
+.site-name {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.tagline {
+  font-size: 20px;
+  color: #aaa;
+}
+
+.search-container {
+  margin: 20px 0;
+  display: flex;
+}
+
+input[type="text"] {
+  flex: 1;
+  width: 80%;
+  padding: 10px;
+  margin-top: 1px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.categories {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.category-button {
+  padding: 10px 15px;
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.8s;
+  -webkit-transition: background-color 0.8s;
+  -moz-transition: background-color 0.8s;
+  -ms-transition: background-color 0.8s;
+  -o-transition: background-color 0.8s;
+}
+
+.category-button:hover {
+  background-color: #435f9c;
+}
+
+/* القسم الأيسر */
+.LeftSection {
+  flex: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  top: 0px;
+    cursor: pointer;
+    font-size: 65px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background-color: #2c2c3c;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 50%;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 11px;
+  height: 900x;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+
+}
+.cta-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+.cta-button:hover::after {
+  transform: scale(4);
+}
+
+.cta-button:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+.card-image {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+}
+
+.card-content {
+  color: #fff;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 0 0 5px;
+}
+
+.card-genre {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating {
+  font-size: 16px;
+  color: #ffc107;
+}
+
+/* ززززز  */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff4757;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.card-p {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,34 @@
+js .. 
+
+// Toggle Sidebar Menu
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("open");
+  }
+  
+  // Close Sidebar if clicked outside
+  document.addEventListener("click", function(event) {
+    const sidebar = document.getElementById("sidebar");
+    const hamburger = document.querySelector(".hamburger");
+    
+    // Check if the click was outside the sidebar or the hamburger menu
+    if (!sidebar.contains(event.target) && !hamburger.contains(event.target)) {
+      sidebar.classList.remove("open");
+    }
+  });
+  
+  // Back to Top Button
+  const backToTop = document.getElementById("back-to-top");
+  
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+  
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  

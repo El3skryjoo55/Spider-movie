@@ -1,0 +1,102 @@
+html ..
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع بحث عن أفلام</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="logo">لوجو الموقع</div>
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+  </nav>
+
+  <!-- Sidebar Menu -->
+  <div id="sidebar">
+    <ul>
+      <li><a href="#">الرئيسية</a></li>
+      <li><a href="#">الأفلام</a></li>
+      <li><a href="#">اتصل بنا</a></li>
+    </ul>
+  </div>
+
+  <!-- Search Section -->
+  <div id="search-section">
+    <div class="search-container">
+      <h1 class="animated-text" style="color: black;">ابحث عن فيلمك المفضل</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="ابحث في اسم الفيلم...">
+        <button  class="search-btn" >ابحث</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Movies Section -->
+  <section id="movies">
+    <h2>الأفلام المقترحة</h2>
+  
+<div class="card-container">
+  <div class="card">
+    <img src="imgs/istockphoto-1771601308-612x612.webp" alt="Movie Image" class="card-img">
+    <div class="card-content">
+      <h3 class="movie-title">Movie Title 1</h3>
+      <p class="movie-type">Genre: Action</p>
+      <p class="movie-rating">Rating: 8.5/10</p>
+      <button class="watch-now-btn">شاهد الآن</button>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="imgs/istockphoto-2166678952-612x612.webp" alt="Movie Image" class="card-img">
+    <div class="card-content">
+      <h3 class="movie-title">Movie Title 2</h3>
+      <p class="movie-type">Genre: Comedy</p>
+      <p class="movie-rating">Rating: 7.8/10</p>
+      <button class="watch-now-btn">شاهد الآن</button>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="imgs/istockphoto-1771601308-612x612.webp" alt="Movie Image" class="card-img">
+    <div class="card-content">
+      <h3 class="movie-title">Movie Title 3</h3>
+      <p class="movie-type">Genre: Drama</p>
+      <p class="movie-rating">Rating: 9/10</p>
+      <button class="watch-now-btn">شاهد الآن</button>
+
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="imgs/istockphoto-2166678952-612x612.webp" alt="Movie Image" class="card-img">
+    <div class="card-content">
+      <h3 class="movie-title">Movie Title 3</h3>
+      <p class="movie-type">Genre: Drama</p>
+      <p class="movie-rating">Rating: 9/10</p>
+      <button class="watch-now-btn">شاهد الآن</button>
+
+    </div>
+  </div>
+
+  <!-- يمكنك إضافة المزيد من الكاردات هنا بنفس التنسيق -->
+</div>
+
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" onclick="scrollToTop()">⬆</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>حقوق النشر © 2025. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
