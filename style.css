@@ -1214,3 +1214,185 @@ button:hover {
   }
 }
 
+
+
+/* search  */
+/* From Uiverse.io by vinodjangid07 */ 
+.input-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+.input {
+  width: 170px;
+  height: 40px;
+  outline: none;
+  padding-left: 15px;
+  font-size: 0.7em;
+  background-color: #fafaf7;
+  border-radius: 6px;
+  border: 1px solid #d0d7e1;
+}
+.Subscribe-btn {
+  height: 40px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: blue;
+  transition: all 0.3s;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.Subscribe-btn:hover {
+  color: white;
+}
+.Subscribe-btn:hover .arrow {
+  margin-right: 0;
+  animation: jello-vertical 0.9s both;
+  transform-origin: left;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.Subscribe-btn:active {
+  transform: scale(0.9);
+}
+
+
+/* responsive .  */
+
+/* تنسيقات للشاشات الصغيرة (أقل من 768px) */
+@media (max-width: 768px) {
+  /* الجزء الرئيسي */
+  .HeroSection {
+    flex-direction: column; /* يجعل الأقسام تظهر بشكل عمودي */
+    height: auto; /* ارتفاع تلقائي */
+    padding: 10px;
+  }
+
+  /* الجزء الأيمن */
+  .RightSection {
+    order: 1; /* يظهر الجزء الأيمن أولاً */
+    width: 100%; /* يأخذ عرض الشاشة بالكامل */
+    padding: 10px;
+  }
+
+  /* الجزء الأيسر */
+  .LeftSection {
+    order: 2; /* يظهر الجزء الأيسر ثانياً */
+    width: 100%; /* يأخذ عرض الشاشة بالكامل */
+    padding: 10px;
+  }
+
+  /* الكاردات */
+  .cards-container {
+    flex-direction: column; /* يجعل الكاردات تظهر بشكل عمودي */
+    align-items: center; /* توسيط الكاردات */
+  }
+
+  .card {
+    width: 90%; /* عرض الكارد يأخذ 90% من الشاشة */
+    margin-bottom: 20px; /* مسافة بين الكاردات */
+  }
+
+  /* البحث والأزرار */
+  .input-wrapper {
+    flex-direction: column; /* يجعل العناصر تظهر بشكل عمودي */
+    align-items: center;
+  }
+
+  .input {
+    width: 100%; /* عرض كامل للبحث */
+    margin-bottom: 10px; /* مسافة بين البحث والأزرار */
+  }
+
+  .categories {
+    flex-direction: column; /* يجعل الأزرار تظهر بشكل عمودي */
+    gap: 10px; /* مسافة بين الأزرار */
+  }
+
+  .category-button {
+    width: 100%; /* عرض كامل للأزرار */
+  }
+
+  /* الفوتر */
+  .footer {
+    width: 100%; /* عرض كامل للفوتر */
+    padding: 10px;
+  }
+}
+
+/* تنسيقات للشاشات المتوسطة (من 768px إلى 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .HeroSection {
+    flex-direction: column; /* يجعل الأقسام تظهر بشكل عمودي */
+    height: auto; /* ارتفاع تلقائي */
+  }
+
+  .RightSection,
+  .LeftSection {
+    width: 100%; /* يأخذ عرض الشاشة بالكامل */
+  }
+
+  .cards-container {
+    flex-wrap: wrap; /* يجعل الكاردات تظهر في صفوف */
+    justify-content: center; /* توسيط الكاردات */
+  }
+
+  .card {
+    width: 45%; /* عرض الكارد يأخذ 45% من الشاشة */
+    margin-bottom: 20px; /* مسافة بين الكاردات */
+  }
+}
+
+/* تنسيقات للشاشات الكبيرة (أكثر من 1024px) */
+@media (min-width: 1025px) {
+  .HeroSection {
+    flex-direction: row; /* يجعل الأقسام تظهر بشكل أفقي */
+  }
+
+  .RightSection {
+    width: 30%; /* عرض الجزء الأيمن */
+  }
+
+  .LeftSection {
+    width: 70%; /* عرض الجزء الأيسر */
+  }
+
+  .cards-container {
+    flex-wrap: wrap; /* يجعل الكاردات تظهر في صفوف */
+    justify-content: flex-start; /* توسيط الكاردات */
+  }
+
+  .card {
+    width: 30%; /* عرض الكارد يأخذ 30% من الشاشة */
+    margin-bottom: 20px; /* مسافة بين الكاردات */
+  }
+}
