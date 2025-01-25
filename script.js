@@ -92,3 +92,32 @@ document.addEventListener("DOMContentLoaded", function () {
 // });
 // ززززززززززززززززززززززززززززز 
 
+// To make the container card . 
+
+const container = document.querySelector(".card-container");
+
+// استنساخ الكروت لعمل تمرير لا نهائي
+const cards = Array.from(container.children);
+cards.forEach((card) => {
+  const clone = card.cloneNode(true);
+  container.appendChild(clone);
+});
+
+// حركة التمرير اللا نهائي
+let scrollPosition = 0;
+
+function animateCards() {
+  scrollPosition += 1; // سرعة الحركة
+  container.style.transform = `translateX(${-scrollPosition}px)`;
+
+  // إعادة التمرير للبداية عند انتهاء المحتوى
+  if (scrollPosition >= container.scrollWidth / 2) {
+    scrollPosition = 0;
+  }
+
+  requestAnimationFrame(animateCards);
+}
+
+animateCards();
+
+

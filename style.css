@@ -541,41 +541,10 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
       justify-content: space-between;
       font-family: Arial, sans-serif;
       font-size: 20px;
+      
 }
 
 
-
-.MenuBtn span {
-  display: block;
-  width: 30px;
-  height: 5px;
-  margin: 6px 0;
-  background-color: #333;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: -250px; /* بداية من اليمين مخفي */
-  width: 250px;
-  height: 100%;
-  background: #333;
-  color: white;
-  padding: 20px;
-  transition: right 0.3s ease;
-  z-index: 1000;
-  display: flex;
-  align-items: baseline;
-
-}
-.sidebar li{
-  margin-top: 15px;
-}
-
-
-.sidebar.active {
-  right: 0; /* تظهر عند إضافة active */
-}
 
 .overlay {
   position: fixed;
@@ -674,6 +643,25 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
   .MenuBtn {
     display: flex;
   }
+  .MenuHeader{
+    display: flex;
+  }
+
+  .NavigationMenu {
+    display: none;
+  }
+
+  .HeaderLogo {
+    margin-left: auto;
+  }
+}
+@media (max-width: 390px) {
+  .MenuBtn {
+    display: flex;
+  }
+  .MenuHeader{
+    display: flex;
+  }
 
   .NavigationMenu {
     display: none;
@@ -698,8 +686,7 @@ body{
 /* cards.  */
 .cards-container {
   display: flex;
-  flex-wrap: wrap; /* للسماح بظهور الكروت على أكثر من سطر إذا كانت المساحة غير كافية */
-  gap: 20px; /* مسافة بين الكروت */
+  gap: 10px; /* مسافة بين الكروت */
   justify-content: center; /* لتوسيط الكروت داخل الحاوية */
   padding: 20px;
 }
@@ -987,17 +974,15 @@ button:hover {
 
 /* القسم الأيسر */
 .LeftSection {
-  flex: 4;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  width: 50%;
+  flex: 2;
+  /* display: flex; */
+  justify-content: center; 
 }
 
 .cards-container {
   display: flex;
   gap: 8px;
-  justify-content: center;
-  flex-wrap: nowrap;
   bottom: 0;
   right: 0;
   z-index: 99;
@@ -1356,10 +1341,7 @@ button:hover {
     height: auto; /* ارتفاع تلقائي */
   }
 
-  .RightSection,
-  .LeftSection {
-    width: 100%; /* يأخذ عرض الشاشة بالكامل */
-  }
+ 
 
   .cards-container {
     flex-wrap: wrap; /* يجعل الكاردات تظهر في صفوف */
@@ -1379,11 +1361,11 @@ button:hover {
   }
 
   .RightSection {
-    width: 30%; /* عرض الجزء الأيمن */
+    width: 50%; /* عرض الجزء الأيمن */
   }
 
   .LeftSection {
-    width: 70%; /* عرض الجزء الأيسر */
+    width: 50%; /* عرض الجزء الأيسر */
   }
 
   .cards-container {
@@ -1393,6 +1375,172 @@ button:hover {
 
   .card {
     width: 30%; /* عرض الكارد يأخذ 30% من الشاشة */
-    margin-bottom: 20px; /* مسافة بين الكاردات */
+    margin-bottom: 15px; /* مسافة بين الكاردات */
   }
 }
+
+
+@media (max-width: 728px) {
+  .NavigationMenu {
+    flex-direction: column; /* تحويل القائمة إلى عمودية */
+    align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+  }
+
+  .menu-item {
+    width: 100%; /* عرض العنصر بالكامل */
+  }
+
+  .sub-menu {
+    position: relative; /* تعديل الموقع ليكون داخل العنصر الرئيسي */
+    width: 100%; /* عرض القوائم الفرعية بالكامل */
+  }
+}
+
+
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .NavigationMenu {
+    flex-direction: column; /* ترتيب رأسي للعناصر */
+  }
+
+  .sub-menu {
+    position: static; /* تظهر بشكل طبيعي تحت القائمة */
+    display: none; /* مخفية مبدئيًا */
+  }
+
+  .menu-item:hover .sub-menu {
+    display: block; /* إظهار القوائم الفرعية عند التمرير */
+  }
+
+  .NavigationMenu > li > a {
+    text-align: left; /* توسيط النص */
+    padding: 15px; /* زيادة المسافة */
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  header{
+    display: flex;
+    align-items: center;
+  }
+}
+
+#menu-toggle {
+  display: none; /* إخفاء الزر افتراضيًا */
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* ظظظظظظظظظظظظظظظ  */
+header.PageHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #1f252e;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: white;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1001;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: block;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+      display: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body {
+      font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* جعل الـ Navigation عمودي بدلاً من أفقي */
+  nav ul {
+      flex-direction: column;
+      padding: 0;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  /* تصغير الخطوط والمسافات */
+  header {
+      padding: 5px;
+  }
+
+  .container {
+      width: 80%;
+  }
+  .cards-container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+}
+
+/* Media Query للتابلت (شاشات متوسطة) */
+@media screen and (max-width: 1024px) {
+  .container {
+      width: 90%;
+  }
+
+  nav {
+      flex-direction: column;
+  }
+
+  nav ul {
+      padding: 0;
+      text-align: center;
+  }
+}
+
+
+
+
+/* Style container Card .  */
+

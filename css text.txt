@@ -5826,3 +5826,50 @@ button:hover {
   font-size: 16px;
   color: #ffc107;
 }
+
+
+
+
+
+
+
+
+owr mine 
+.LeftSection {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 calc(33.333% - 20px);
+  background: #2c2c3c;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.prev-btn,
+.next-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: #2563eb;
+}
