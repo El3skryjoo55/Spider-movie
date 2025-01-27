@@ -13,9 +13,8 @@
 </head>
 <body style="font-family: 'Cairo', sans-serif;">  
  
-  <header class="PageHeader" style="font-family: 'Cairo', sans-serif;">
+  <header class="PageHeader" style="font-family: 'Cairo', sans-serif; ">
     <div class="container">
-      <!-- to creat menu img  -->
       <div class="MenuBtn" style="margin-right: 0;">
         <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
          <span class="navbar-toggler-icon"></span>
@@ -24,7 +23,6 @@
         </button>
       </div>
       <div class="side-bar">
-        <!-- المحتويات اللي انت عايز تضيفها هنا -->
         <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
@@ -39,7 +37,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- التغطية السوداء اللي بتغطي الشاشة -->
       <div class="overlay"></div>
       <img class="img-logo" style="position: fixed; margin-top: 10px;" src="imgs/photo_2025-01-22_12-57-26.jpg" alt="logo header">
@@ -93,13 +91,14 @@
 
   <!-- hero section  -->
   <div class="HeroSection">
-    <!-- القسم الأيمن -->
+    <!--Right Section-->
     <div class="RightSection">
       <div class="logo-container">
         <img src="imgs/photo_2025-01-22_12-57-26.jpg" alt="Logo" class="logo">
         <h1 class="site-name" style="font-family: 'Times New Roman', Times, serif;">Spider</h1>
         <p class="tagline">أسرع موقع في مصر</p>
       </div>
+      
      <!-- From Uiverse.io by vinodjangid07 --> 
 <div class="input-wrapper" style= "direction: rtl;">
   <input placeholder=" ابحث في Spider..." class="input" name="text" type="text" />
@@ -125,6 +124,8 @@
         <button class="category-button">Movie</button>
         <button class="category-button">Series</button>
       </div>
+
+      <!-- Social media links .  -->
             <!-- From Uiverse.io by vinodjangid07 --> 
       <div class="card-p" style="width: 70%;  margin-right: 65px; background: none; border-radius: 10px; ">
         <!-- whatsapp  -->
@@ -147,7 +148,7 @@
 
     </div>
   
-    <!-- القسم الأيسر -->
+    <!--Left Section-->
     <div class="LeftSection">
       <div class="cards-container">
         <div class="card">
@@ -194,11 +195,11 @@
             </div>
             <button class="cta-button">مشاهدة الآن 📽</button>
           </div>
-          <!-- للتكرار و السلاسه  -->
+          
           
 
         </div>
-        
+        <!-- للتكرار و السلاسه  -->
       </div>
     </div>
   </div>
@@ -206,151 +207,132 @@
   
 
   <!-- cards  -->
-  <div class="cards-container-m">
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2025/01/474211984_1172863967545009_9152903904326694445_n-440x550.jpg" alt="Movie 1" class="card-image-m">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title 1</h3>
-        <p class="card-genre">Action</p>
-        <div class="card-rating">
-          <span class="rating">7.5</span>
-          <i class="fa fa-star"></i>
-        </div>
-        <p class="card-description">وصف الفيلم هيكون هنا </p>
 
-      </div>
-    </div>
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2025/01/Yami-shibai-14-389x550.jpg" alt="Movie 2" class="card-image-m">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title 2</h3>
-        <p class="card-genre">Drama</p>
-        <div class="card-rating">
-          <span class="rating">9.0</span>
-          <i class="fa fa-star"></i>
+  <div class="container mt-5">
+    <div class="row g-3">
+      <!-- الكارت الأول -->
+      <div class="col-12 col-lg-3">
+        <div class="card-m">
+          <img src="https://asd.rest/wp-content/uploads/2025/01/474211984_1172863967545009_9152903904326694445_n-440x550.jpg" alt="Movie 1" class="card-image-m">
+          <div class="card-content">
+            <h3 class="card-title">Movie Title 1</h3>
+            <p class="card-genre">Action</p>
+            <div class="card-rating">
+              <span class="rating">7.5</span>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="card-description">وصف الفيلم الأول هنا</p>
+          </div>
         </div>
-        <p class="card-description">وصف الفيلم هيكون هنا </p>
-
       </div>
-    </div>
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2024/09/lone-star-5-367x550.jpg" alt="Movie 2" class="card-image-m">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title 2</h3>
-        <p class="card-genre">Drama</p>
-        <div class="card-rating">
-          <span class="rating">9.0</span>
-          <i class="fa fa-star"></i>
+      <!-- الكارت الثاني -->
+      <div class="col-12 col-lg-3">
+        <div class="card-m">
+          <img src="https://asd.rest/wp-content/uploads/2025/01/Yami-shibai-14-389x550.jpg" alt="Movie 2" class="card-image-m">
+          <div class="card-content">
+            <h3 class="card-title">Movie Title 2</h3>
+            <p class="card-genre">Drama</p>
+            <div class="card-rating">
+              <span class="rating">8.2</span>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="card-description">وصف الفيلم الثاني هنا</p>
+          </div>
         </div>
-        <p class="card-description">وصف الفيلم هيكون هنا </p>
-
       </div>
-    </div>
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2023/01/BB93AB8A-65E5-4DEF-818B-0614AA158576-450x450.jpeg" alt="Movie 2" class="card-image-m">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title 2</h3>
-        <p class="card-genre">Drama</p>
-        <div class="card-rating">
-          <span class="rating">9.0</span>
-          <i class="fa fa-star"></i>
+      <!-- الكارت الثالث -->
+      <div class="col-12 col-lg-3">
+        <div class="card-m">
+          <img src="https://asd.rest/wp-content/uploads/2024/09/lone-star-5-367x550.jpg" alt="Movie 3" class="card-image-m">
+          <div class="card-content">
+            <h3 class="card-title">Movie Title 3</h3>
+            <p class="card-genre">Comedy</p>
+            <div class="card-rating">
+              <span class="rating">9.0</span>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="card-description">وصف الفيلم الثالث هنا</p>
+          </div>
         </div>
-        <p class="card-description">وصف الفيلم هيكون هنا </p>
-
       </div>
-    </div>
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2023/01/BB93AB8A-65E5-4DEF-818B-0614AA158576-450x450.jpeg" alt="Movie 2" class="card-image">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title 2</h3>
-        <p class="card-genre">Drama</p>
-        <div class="card-rating">
-          <span class="rating">9.0</span>
-          <i class="fa fa-star"></i>
+      <!-- الكارت الرابع -->
+      <div class="col-12 col-lg-3">
+        <div class="card-m">
+          <img src="https://asd.rest/wp-content/uploads/2025/01/Yami-shibai-14-389x550.jpg" alt="Movie 4" class="card-image-m">
+          <div class="card-content">
+            <h3 class="card-title">Movie Title 4</h3>
+            <p class="card-genre">Thriller</p>
+            <div class="card-rating">
+              <span class="rating">7.8</span>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="card-description">وصف الفيلم الرابع هنا</p>
+          </div>
         </div>
-        <p class="card-description">وصف الفيلم هيكون هنا </p>
-
       </div>
-    </div>
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2025/01/d8Ryb8AunYAuycVKDp5HpdWPKgC-367x550.jpg" alt="Movie 2" class="card-image">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title 2</h3>
-        <p class="card-genre">Drama</p>
-        <div class="card-rating">
-          <span class="rating">9.0</span>
-          <i class="fa fa-star"></i>
+      <div class="col-12 col-lg-3">
+        <div class="card-m">
+          <img src="https://asd.rest/wp-content/uploads/2024/09/lone-star-5-367x550.jpg" alt="Movie 3" class="card-image-m">
+          <div class="card-content">
+            <h3 class="card-title">Movie Title 3</h3>
+            <p class="card-genre">Comedy</p>
+            <div class="card-rating">
+              <span class="rating">9.0</span>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="card-description">وصف الفيلم الثالث هنا</p>
+          </div>
         </div>
-        <p class="card-description">وصف الفيلم هيكون هنا </p>
-
       </div>
-    </div>
-    <!-- ج  -->
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2025/01/%D9%81%D9%8A%D9%84%D9%85-The-End-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-scaled-367x550.jpg" alt="Movie 2" class="card-image">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title 2</h3>
-        <p class="card-genre">Drama</p>
-        <div class="card-rating">
-          <span class="rating">9.0</span>
-          <i class="fa fa-star"></i>
+      <div class="col-12 col-lg-3">
+        <div class="card-m">
+          <img src="https://asd.rest/wp-content/uploads/2024/09/lone-star-5-367x550.jpg" alt="Movie 3" class="card-image-m">
+          <div class="card-content">
+            <h3 class="card-title">Movie Title 3</h3>
+            <p class="card-genre">Comedy</p>
+            <div class="card-rating">
+              <span class="rating">9.0</span>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="card-description">وصف الفيلم الثالث هنا</p>
+          </div>
         </div>
-        <p class="card-description">وصف الفيلم هيكون هنا </p>
-
       </div>
-    </div>
-    <!-- س -->
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2024/09/u8alkMeMOp9F92wOH5r3ktoIHcS-scaled-367x550.jpg" alt="Movie Title 1">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title 1</h3>
-        <p class="card-genre">Action</p>
-        <div class="card-rating">
-          <span>8.5</span>
-          <i class="fa fa-star"></i>
+      <div class="col-12 col-lg-3">
+        <div class="card-m">
+          <img src="https://asd.rest/wp-content/uploads/2025/01/Yami-shibai-14-389x550.jpg" alt="Movie 3" class="card-image-m">
+          <div class="card-content">
+            <h3 class="card-title">Movie Title 3</h3>
+            <p class="card-genre">Comedy</p>
+            <div class="card-rating">
+              <span class="rating">9.0</span>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="card-description">وصف الفيلم الثالث هنا</p>
+          </div>
         </div>
-        <p class="card-description">وصف الفيلم هيكون هنا </p>
       </div>
-    </div>
-    
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2025/01/Shifting-Gears-scaled-367x550.jpg" alt="Movie Poster">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title</h3>
-        <p class="card-genre">Action</p>
-        <div class="card-rating">
-          <span class="rating">9.0</span>
-          <i class="fa fa-star"></i>
+      <div class="col-12 col-lg-3">
+        <div class="card-m">
+          <img src="https://asd.rest/wp-content/uploads/2024/09/lone-star-5-367x550.jpg" alt="Movie 3" class="card-image-m">
+          <div class="card-content">
+            <h3 class="card-title">Movie Title 3</h3>
+            <p class="card-genre">Comedy</p>
+            <div class="card-rating">
+              <span class="rating">9.0</span>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="card-description">وصف الفيلم الثالث هنا</p>
+          </div>
         </div>
-        <p class="card-description"> وصف الفيلم هيكون هنا </p>
       </div>
     </div>
-
-    <div class="card-m">
-      <img src="https://asd.rest/wp-content/uploads/2025/01/River-of-Blood-389x550.jpg" alt="Movie Poster">
-      <div class="card-content">
-        <h3 class="card-title">Movie Title</h3>
-        <p class="card-genre">Action</p>
-        <div class="card-rating">
-          <span class="rating">8.5</span>
-          <i class="fa fa-star"></i>
-        </div>
-        <p class="card-description"> وصف الفيلم هيكون هنا </p>
-      </div>
-    </div>
-    
-    
-    
-    
-
-    <!-- يمكنك إضافة المزيد من الكروت بنفس الطريقة -->
   </div>
-  
 
 
 
 
-  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br>
  <!-- الفوتر مع أيقونات -->
  <footer class="footer" style="margin-bottom: 0; ">
    <div class="footer-content">
@@ -370,5 +352,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
+
+

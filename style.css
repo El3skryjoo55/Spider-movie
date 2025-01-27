@@ -1,7 +1,4 @@
-
-
-/* .....  */
-
+/* Styling  */
 	
 body {
   font-family: 'FontBold' ,sans-serif;
@@ -20,6 +17,8 @@ body {
   padding-top: 70px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* ALL & General Elemnts .  */
 * {
   padding: 0;
   margin: 0;
@@ -107,18 +106,20 @@ header.PageHeader {
   background: #FFF;
   margin-bottom: 8px;
 }
-/* .PageHeader .MenuBtn span:nth-child(2n+0) {
+/* to make the menu btn shape   */
+.PageHeader .MenuBtn span:nth-child(2n+0) {
   width: 15px;
 }
 .PageHeader .MenuBtn span:nth-child(3n+0) {
   width: 26px;
-} */
+}
+
 header.PageHeader .HeaderLogo {
   float: right;
 }
 header.PageHeader .HeaderLogo > a {
   display: block;
-  line-height: 60px;
+  line-height: 1000px;
   font-family: Righteous;
   text-transform: capitalize;
   padding-right: 65px;
@@ -426,11 +427,10 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
 
 
 
-
-
 		/* ...................................  */
 
-    /* قسم التخصيص */
+
+    /* Search section . */
 .search-animation {
   text-align: center;
   margin: 50px 0;
@@ -444,7 +444,7 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* تأثير الحركة */
+/* animation effect*/
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -463,7 +463,6 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
 
 .search-container {
   display: block;
-  
   align-items: center;
   position: relative;
   margin-top: 2px;
@@ -493,9 +492,9 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
 
 }
 
- /* لجعل النص placeholder بجانب الأيقونة */
+ /* Place holder style*/
  .search-container input::placeholder {
-  color: #aaa; /* لون placeholder */
+  color: #aaa; 
   font-size: 17px;
 }
 
@@ -527,24 +526,21 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
 }
 
 .img-logo{
-  width: 50px; /* حجم الصورة */
-  height: 50px; /* حجم الصورة */
-  border-radius: 50%; /* لجعل الصورة دائرية */
-  margin-right: 0px; /* مسافة بين الصورة والاسم */
-  border: 2px solid #ccc; /* إطار للصورة */
-  object-fit: cover; /* لتناسب الصورة الإطار */
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  margin-right: 0px; 
+  border: 2px solid #ccc;
+  object-fit: cover;
   cursor: pointer;
 }
 
 .HeaderLogo{
-      display: flex;
-      justify-content: space-between;
-      font-family: Arial, sans-serif;
-      font-size: 20px;
-      
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
 }
-
-
 
 .overlay {
   position: fixed;
@@ -558,11 +554,11 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
 }
 
 .overlay.active {
-  display: block; /* تظهر عند إضافة active */
+  display: block;
 }
 
 
-/* تنسيق الفوتر */
+/*Footer Section*/
 .footer {
   background-color: #535252;
   color: rgb(227, 216, 216);
@@ -570,9 +566,7 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
   padding: 20px 0;
   position: relative;
   bottom: 0;
-  width: 1273px;
-  
-
+  /* width: 1273px; */ /*For test. */
 }
 
 .footer-content {
@@ -592,7 +586,7 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
   color: white;
   margin: 0 10px;
   text-decoration: none;
-  font-size: 20px; /* حجم الأيقونات */
+  font-size: 20px;
 }
 
 .social-links a:hover {
@@ -600,13 +594,12 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
 }
 
 .social-links a i {
-  font-size: 24px; /* حجم الأيقونات عند التمرير */
-  transition: transform 0.3s ease; /* تأثير عند المرور */
+  font-size: 24px;
+  transition: transform 0.3s ease; 
 }
 
 .social-links a:hover i {
   transform: scale(1.2);
-   /* تكبير الأيقونة عند المرور */
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -636,9 +629,7 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
 }
 
 
-
-
-
+/* make its query  */
 @media (max-width: 768px) {
   .MenuBtn {
     display: flex;
@@ -672,48 +663,51 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
   }
 }
 
+
 *{
   box-sizing: border-box;
 }
 body{
   display: inline-table;
   float: none;
-  font-family: 'Tajawal ', sans-serif; /* الخط العربي هنا */
+  font-family: 'Tajawal ', sans-serif; /*arabic style*/
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
+
+
 /* cards.  */
 .cards-container {
   display: flex;
-  gap: 10px; /* مسافة بين الكروت */
-  justify-content: center; /* لتوسيط الكروت داخل الحاوية */
+  gap: 10px; 
+  justify-content: center; 
   padding: 20px;
 }
 
 .card {
-  width: 250px; /* عرض الكارد */
-  background: #1e2430; /* لون خلفية الكارد */
-  border-radius: 10px; /* حواف دائرية */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* ظل الكارد */
-  overflow: hidden; /* لمنع تجاوز الصورة حدود الكارد */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير الأنيميشن */
+  width: 250px;
+  background: #1e2430; 
+  border-radius: 10px; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /*Shadow*/
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .card:hover {
-  transform: translateY(-10px); /* رفع الكارد عند التحريك فوقه */
+  transform: translateY(-10px);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 .card-image {
-  width: 100%; /* الصورة تأخذ عرض الكارد بالكامل */
-  height: 150px; /* ارتفاع ثابت للصورة */
-  object-fit: cover; /* لضبط الصورة داخل الكارد بشكل مثالي */
+  width: 100%;
+  height: 150px;
+  object-fit: cover; 
 }
 
 .card-content {
   padding: 15px;
-  text-align: center; /* توسيط النص داخل الكارد */
+  text-align: center;
 }
 
 .card-title {
@@ -738,49 +732,50 @@ body{
 }
 
 .rating {
-  margin-right: 5px; /* مسافة بين التقييم والنجمة */
+  margin-right: 5px; 
 }
 
 .fa-star {
-  color: #ffcc00; /* لون النجمة */
+  color: #ffcc00; 
 }
 
 
 .card {
-  opacity: 0; /* البداية مخفية */
-  transform: translateY(20px); /* تبدأ الكروت من أسفل */
+  opacity: 0;
+  transform: translateY(20px); 
   animation: fadeIn 0.5s ease forwards;
 }
 
 @keyframes fadeIn {
   to {
     opacity: 1;
-    transform: translateY(0); /* رجوع الكروت لمكانها الطبيعي */
+    transform: translateY(0); 
   }
 }
 
+
 .scroll-to-top {
   position: fixed;
-  /*لتثبيتالزرفيمكانمحدد*/bottom: 20px;
-  /*المسافةمنأسفلالشاشة*/right: 20px;
-  /*المسافةمنيمينالشاشة*/width: 50px;
-  /*عرضالزر*/height: 50px;
-  /*ارتفاعالزر*/background-color: #3498db;
-  /*اللونالأزرقالفاتح*/color: white;
-  /*لونالنص*/border: none;
-  /*إزالةالحدود*/border-radius: 50%;
-  /*شكلدائري*/display: none;
-  /*إخفاءالزرافتراضيًا*/align-items: center;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
   justify-content: center;
   font-size: 20px;
-  /*حجمالسهم*/cursor: pointer;
-  /*تحويلالمؤشرعندالتحويم*/box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /*ظلالزر*/transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .scroll-to-top:hover {
-  background-color: #2980b9; /* تغيير اللون عند التحويم */
-  transform: scale(1.1); /* تكبير الزر قليلاً عند التحويم */
+  background-color: #2980b9;
+  transform: scale(1.1);
 }
 
 body{
@@ -788,10 +783,10 @@ body{
 }
 
 
-/* style of cards  */
+/* style of other cards  */
 .card-m {
-  width: 220px; /* العرض */
-  height: 400px; /* الطول */
+  width: 220px;
+  height: 400px; 
   border-radius: 10px;
   overflow: hidden;
   background-color: #1e1e2a;
@@ -808,16 +803,16 @@ body{
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* تنسيق الصورة داخل الكارد */
+
 .card-m img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* تغطي الصورة الكارد بالكامل */
+  object-fit: cover; 
   display: block;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* ظل تحت الصورة */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow under img*/
 }
 
-/* تنسيق المحتوى داخل الكارد */
+
 .card-content {
   position: absolute;
   bottom: 0;
@@ -833,7 +828,7 @@ body{
   z-index: 1;
 }
 
-/* تنسيق اسم الفيلم والنوع */
+
 .card-title {
   font-size: 19px;
   font-weight: bold;
@@ -845,7 +840,7 @@ body{
   margin: 5px 0;
 }
 
-/* التقييم */
+
 .card-rating {
   font-size: 14px;
   margin: 5px 0;
@@ -855,33 +850,31 @@ body{
   color: gold;
 }
 
-/* الوصف الذي سيظهر عند الهوفر */
+
 .card-description {
   font-size: 12px;
   margin-top: 5px;
   color: #ccc;
-  opacity: 0; /* إخفاء الوصف بشكل افتراضي */
-  transform: translateY(20px); /* تحريك الوصف لأسفل */
+  opacity: 0; 
+  transform: translateY(20px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .card-m:hover .card-description {
-  opacity: 1; /* إظهار الوصف عند الهوفر */
-  transform: translateY(0); /* إعادة تحريك الوصف لوضعه الطبيعي */
+  opacity: 1;
+  transform: translateY(0); 
 }
 .card-m img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* تغطي الصورة الكارد بالكامل */
+  object-fit: cover; 
   display: block;
-  box-shadow: 0 -15px 30px rgba(94, 93, 93, 0.6); /* الظل الجديد الذي يطلع فوق */
+  box-shadow: 0 -15px 30px rgba(94, 93, 93, 0.6);
 }
 
 
 
-
-
-/* تنسيق القسم الرئيسي */
+/*Hero section style..*/
 .HeroSection {
   display: flex;
   justify-content: space-between;
@@ -892,7 +885,7 @@ body{
   color: #fff;
 }
 
-/* القسم الأيمن */
+/*right section*/
 .RightSection {
   flex: 1;
   padding: 20px;
@@ -908,12 +901,12 @@ body{
 .logo {
   width: 100px;
   height: auto;
-  width: 200px; /* عرض الصورة */
-  height: 200px; /* ارتفاع الصورة (يجب أن يكون مساويًا للعرض) */
-  border-radius: 50%; /* لتحويل الصورة إلى دائرة */
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%; 
   
-  /* border: 2px solid #fff; إذا أردت إضافة إطار */
-  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3); /* لإضافة ظل */
+  
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
 }
 
 .site-name {
@@ -940,7 +933,6 @@ input[type="text"] {
   border: 1px solid #ccc;
   font-size: 16px;
 }
-
 
 
 button:hover {
@@ -972,7 +964,7 @@ button:hover {
   background-color: #435f9c;
 }
 
-/* القسم الأيسر */
+/* Left section*/
 .LeftSection {
   width: 50%;
   flex: 2;
@@ -1110,7 +1102,7 @@ button:hover {
   color: #ffc107;
 }
 
-/* ززززز  */
+/* its badge */
 .badge {
   position: absolute;
   top: 10px;
@@ -1124,8 +1116,8 @@ button:hover {
 }
 
 
-
-/* From Uiverse.io by vinodjangid07 */ 
+/* Social media links.  */
+/* From Uiverse.io by YossefFahmy */ 
 .card-p {
   width: fit-content;
   height: fit-content;
@@ -1271,150 +1263,151 @@ button:hover {
 }
 
 
+
 /* responsive .  */
 
-/* تنسيقات للشاشات الصغيرة (أقل من 768px) */
+/* (768px) */
 @media (max-width: 768px) {
-  /* الجزء الرئيسي */
+  /* esssencial part  */
   .HeroSection {
-    flex-direction: column; /* يجعل الأقسام تظهر بشكل عمودي */
-    height: auto; /* ارتفاع تلقائي */
+    flex-direction: column;
+    height: auto;
     padding: 10px;
   }
 
-  /* الجزء الأيمن */
+ 
   .RightSection {
-    order: 1; /* يظهر الجزء الأيمن أولاً */
-    width: 100%; /* يأخذ عرض الشاشة بالكامل */
+    order: 1; 
+    width: 100%;
     padding: 10px;
   }
 
-  /* الجزء الأيسر */
+  
   .LeftSection {
-    order: 2; /* يظهر الجزء الأيسر ثانياً */
-    width: 100%; /* يأخذ عرض الشاشة بالكامل */
+    order: 2;
+    width: 100%; 
     padding: 10px;
   }
 
-  /* الكاردات */
+  
   .cards-container {
-    flex-direction: column; /* يجعل الكاردات تظهر بشكل عمودي */
-    align-items: center; /* توسيط الكاردات */
+    flex-direction: column;
+    align-items: center; 
   }
 
   .card {
-    width: 90%; /* عرض الكارد يأخذ 90% من الشاشة */
-    margin-bottom: 20px; /* مسافة بين الكاردات */
+    width: 90%; 
+    margin-bottom: 20px;
   }
 
-  /* البحث والأزرار */
+  
   .input-wrapper {
-    flex-direction: column; /* يجعل العناصر تظهر بشكل عمودي */
+    flex-direction: column;
     align-items: center;
   }
 
   .input {
-    width: 100%; /* عرض كامل للبحث */
-    margin-bottom: 10px; /* مسافة بين البحث والأزرار */
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .categories {
-    flex-direction: column; /* يجعل الأزرار تظهر بشكل عمودي */
-    gap: 10px; /* مسافة بين الأزرار */
+    flex-direction: column; 
+    gap: 10px; 
   }
 
   .category-button {
-    width: 100%; /* عرض كامل للأزرار */
+    width: 100%; 
   }
 
-  /* الفوتر */
+  /* footer*/
   .footer {
-    width: 100%; /* عرض كامل للفوتر */
+    width: 100%; /* full width*/
     padding: 10px;
   }
 }
 
-/* تنسيقات للشاشات المتوسطة (من 768px إلى 1024px) */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .HeroSection {
-    flex-direction: column; /* يجعل الأقسام تظهر بشكل عمودي */
-    height: auto; /* ارتفاع تلقائي */
+    flex-direction: column;
+    height: auto; 
   }
 
  
 
   .cards-container {
-    flex-wrap: wrap; /* يجعل الكاردات تظهر في صفوف */
-    justify-content: center; /* توسيط الكاردات */
+    flex-wrap: wrap; 
+    justify-content: center;
   }
 
   .card {
-    width: 45%; /* عرض الكارد يأخذ 45% من الشاشة */
-    margin-bottom: 20px; /* مسافة بين الكاردات */
+    width: 45%; 
+    margin-bottom: 20px; 
   }
 }
 
-/* تنسيقات للشاشات الكبيرة (أكثر من 1024px) */
+
 @media (min-width: 1025px) {
   .HeroSection {
-    flex-direction: row; /* يجعل الأقسام تظهر بشكل أفقي */
+    flex-direction: row;
   }
 
   .RightSection {
-    width: 50%; /* عرض الجزء الأيمن */
+    width: 50%;
   }
 
   .LeftSection {
-    width: 50%; /* عرض الجزء الأيسر */
+    width: 50%;
   }
 
   .cards-container {
-    flex-wrap: wrap; /* يجعل الكاردات تظهر في صفوف */
-    justify-content: flex-start; /* توسيط الكاردات */
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .card {
-    width: 30%; /* عرض الكارد يأخذ 30% من الشاشة */
-    margin-bottom: 15px; /* مسافة بين الكاردات */
+    width: 30%; 
+    margin-bottom: 15px; 
   }
 }
 
 
 @media (max-width: 728px) {
   .NavigationMenu {
-    flex-direction: column; /* تحويل القائمة إلى عمودية */
-    align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+    flex-direction: column;
+    align-items: flex-start; 
   }
 
   .menu-item {
-    width: 100%; /* عرض العنصر بالكامل */
+    width: 100%; 
   }
 
   .sub-menu {
-    position: relative; /* تعديل الموقع ليكون داخل العنصر الرئيسي */
-    width: 100%; /* عرض القوائم الفرعية بالكامل */
+    position: relative; 
+    width: 100%;
   }
 }
 
 
-/* تصميم متجاوب للشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .NavigationMenu {
-    flex-direction: column; /* ترتيب رأسي للعناصر */
+    flex-direction: column;
   }
 
   .sub-menu {
-    position: static; /* تظهر بشكل طبيعي تحت القائمة */
-    display: none; /* مخفية مبدئيًا */
+    position: static;
+    display: none; 
   }
 
   .menu-item:hover .sub-menu {
-    display: block; /* إظهار القوائم الفرعية عند التمرير */
+    display: block; 
   }
 
   .NavigationMenu > li > a {
-    text-align: left; /* توسيط النص */
-    padding: 15px; /* زيادة المسافة */
+    text-align: left;
+    padding: 15px; 
   }
   .container{
     display: flex;
@@ -1427,7 +1420,7 @@ button:hover {
 }
 
 #menu-toggle {
-  display: none; /* إخفاء الزر افتراضيًا */
+  display: none;
   background-color: #000;
   color: #fff;
   border: none;
@@ -1437,9 +1430,6 @@ button:hover {
 
 
 
-
-
-/* ظظظظظظظظظظظظظظظ  */
 header.PageHeader {
   position: fixed;
   top: 0;
@@ -1497,7 +1487,7 @@ header.PageHeader {
   }
 }
 @media screen and (max-width: 768px) {
-  /* جعل الـ Navigation عمودي بدلاً من أفقي */
+
   nav ul {
       flex-direction: column;
       padding: 0;
@@ -1507,7 +1497,7 @@ header.PageHeader {
       margin: 10px 0;
   }
 
-  /* تصغير الخطوط والمسافات */
+
   header {
       padding: 5px;
   }
@@ -1523,7 +1513,6 @@ header.PageHeader {
   }
 }
 
-/* Media Query للتابلت (شاشات متوسطة) */
 @media screen and (max-width: 1024px) {
   .container {
       width: 90%;
