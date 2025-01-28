@@ -1,5 +1,9 @@
 /* Styling  */
-	
+:root {
+  --primary-color: aqua;
+  --secondary-color: #333;
+}	
+
 body {
   font-family: 'FontBold' ,sans-serif;
   font-weight: 400;
@@ -1473,9 +1477,48 @@ header.PageHeader {
   display: block;
 }
 
+/* Loader styles */
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 1000;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Container and content styles */
+.container-loader {
+  display: none; /* Hide content initially */
+  padding: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.container-loader.visible {
+  display: block; /* Show content when data is loaded */
+}
 
 
-
+/* queries ..  */
 @media screen and (max-width: 768px) {
   .sidebar {
       display: none;
@@ -1528,8 +1571,4 @@ header.PageHeader {
   }
 }
 
-
-
-
-/* Style container Card .  */
 

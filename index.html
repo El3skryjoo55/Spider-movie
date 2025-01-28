@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spider.TV</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="imgs/photo_2025-01-22_12-57-26.jpg" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="موقع Spider.TV لأفلام ومسلسلات مجانية">
+<meta name="keywords" content="أفلام, مسلسلات, Netflix, عربي, أجنبي">
+<meta name="author" content="Your Name">
+<title>Spider.TV</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="imgs/photo_2025-01-22_12-57-26.jpg" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   
 </head>
 <body style="font-family: 'Cairo', sans-serif;">  
+  <!-- Loader -->
+  <div class="loader"></div>
+
+  <!-- Content -->
+  <div class="container-loader">
+    <h1>Content Loaded Successfully</h1>
+    <p>This is the content that appears after the data is loaded.</p>
+  </div>
  
   <header class="PageHeader" style="font-family: 'Cairo', sans-serif; ">
     <div class="container">
@@ -102,7 +114,7 @@
      <!-- From Uiverse.io by vinodjangid07 --> 
 <div class="input-wrapper" style= "direction: rtl;">
   <input placeholder=" ابحث في Spider..." class="input" name="text" type="text" />
-  <button class="Subscribe-btn">
+  <button class="Subscribe-btn" aria-label="Search">
     بحث
     <svg
       class="arrow"
@@ -211,7 +223,7 @@
   <div class="container mt-5">
     <div class="row g-3">
       <!-- الكارت الأول -->
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
         <div class="card-m">
           <img src="https://asd.rest/wp-content/uploads/2025/01/474211984_1172863967545009_9152903904326694445_n-440x550.jpg" alt="Movie 1" class="card-image-m">
           <div class="card-content">
@@ -226,7 +238,7 @@
         </div>
       </div>
       <!-- الكارت الثاني -->
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
         <div class="card-m">
           <img src="https://asd.rest/wp-content/uploads/2025/01/Yami-shibai-14-389x550.jpg" alt="Movie 2" class="card-image-m">
           <div class="card-content">
@@ -241,7 +253,7 @@
         </div>
       </div>
       <!-- الكارت الثالث -->
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
         <div class="card-m">
           <img src="https://asd.rest/wp-content/uploads/2024/09/lone-star-5-367x550.jpg" alt="Movie 3" class="card-image-m">
           <div class="card-content">
@@ -256,7 +268,7 @@
         </div>
       </div>
       <!-- الكارت الرابع -->
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
         <div class="card-m">
           <img src="https://asd.rest/wp-content/uploads/2025/01/Yami-shibai-14-389x550.jpg" alt="Movie 4" class="card-image-m">
           <div class="card-content">
@@ -270,7 +282,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3">
+      <!-- الكارت الخامس  -->
+      <div class="col-12 col-lg-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
         <div class="card-m">
           <img src="https://asd.rest/wp-content/uploads/2024/09/lone-star-5-367x550.jpg" alt="Movie 3" class="card-image-m">
           <div class="card-content">
@@ -284,7 +297,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3">
+      <!-- الكارت السادس  -->
+      <div class="col-12 col-lg-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
         <div class="card-m">
           <img src="https://asd.rest/wp-content/uploads/2024/09/lone-star-5-367x550.jpg" alt="Movie 3" class="card-image-m">
           <div class="card-content">
@@ -298,7 +312,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3">
+      <!-- الكارت السابع  -->
+      <div class="col-12 col-lg-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
         <div class="card-m">
           <img src="https://asd.rest/wp-content/uploads/2025/01/Yami-shibai-14-389x550.jpg" alt="Movie 3" class="card-image-m">
           <div class="card-content">
@@ -312,7 +327,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3">
+      <!-- الكارت التامن  -->
+      <div class="col-12 col-lg-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
         <div class="card-m">
           <img src="https://asd.rest/wp-content/uploads/2024/09/lone-star-5-367x550.jpg" alt="Movie 3" class="card-image-m">
           <div class="card-content">
@@ -326,6 +342,7 @@
           </div>
         </div>
       </div>
+      <!-- هنا لو عايز تضيف كروت  -->
     </div>
   </div>
 
@@ -352,6 +369,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
