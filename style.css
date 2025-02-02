@@ -394,7 +394,7 @@ header.PageHeader .HeaderLogo > a >h4 > em {
 }
 section.HeroSecion {
   display: block;
-  width: 100%;
+  width: auto;
   background: #1f252e;
   clear: both;
 }
@@ -672,7 +672,7 @@ section.HeroSecion .RightHero .LogoHero .LogoHeroText {
   box-sizing: border-box;
 }
 body{
-  display: inline-table;
+  /* display: inline-table; */
   float: none;
   font-family: 'Tajawal ', sans-serif; /*arabic style*/
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -884,7 +884,7 @@ body{
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  padding: 20px;
+  /* padding: 20px; */
   background: #1e1e2a;
   color: #fff;
 }
@@ -970,9 +970,9 @@ button:hover {
 
 /* Left section*/
 .LeftSection {
-  width: 50%;
+  width: 100%;
   flex: 2;
-  /* display: flex; */
+  display: flex;
   justify-content: center; 
 }
 
@@ -1276,7 +1276,7 @@ button:hover {
   .HeroSection {
     flex-direction: column;
     height: auto;
-    padding: 10px;
+    /* padding: 10px; */
   }
 
  
@@ -1334,8 +1334,9 @@ button:hover {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .HeroSection {
-    flex-direction: column;
+    /* flex-direction: column; */
     height: auto; 
+    width: auto;
   }
 
  
@@ -1572,3 +1573,8 @@ header.PageHeader {
 }
 
 
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: none;
+  }
+}
